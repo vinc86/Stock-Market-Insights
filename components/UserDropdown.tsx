@@ -33,9 +33,8 @@ const UserDropdown = () => {
           className="flex items-center gap-3 text-gray-4 hover:text-yellow-500"
         >
           <Avatar className="h-8 w-8">
-            {/*
             <AvatarImage src="https://github.com/shadcn.png" />
-*/}
+
             <AvatarFallback className="bg-yellow-500 text-yellow-900 text-sm font-bold">
               {user.name[0]}
             </AvatarFallback>
@@ -51,9 +50,7 @@ const UserDropdown = () => {
         <DropdownMenuLabel>
           <div className="flex relative items-center gap-3 py-2">
             <Avatar className="h-10 w-10">
-              {/*
-            <AvatarImage src="https://github.com/shadcn.png" />
-*/}
+              <AvatarImage src="https://github.com/shadcn.png" />
               <AvatarFallback className="bg-yellow-500 text-yellow-900 text-sm font-bold">
                 {user.name[0]}
               </AvatarFallback>
@@ -67,7 +64,7 @@ const UserDropdown = () => {
           </div>
         </DropdownMenuLabel>
 
-        <DropdownMenuSeparator className=" sm:hidden bg-gray-600" />
+        <DropdownMenuSeparator className="sm:hidden bg-gray-600" />
         <nav className="sm:hidden">
           <NavItems />
         </nav>
